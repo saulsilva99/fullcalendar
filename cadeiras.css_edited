@@ -1,0 +1,12 @@
+#cadeiras{
+   float:left;
+   height: 400px;
+   display: block;
+   width:200px;
+   position: absolute;
+   top: 50px;
+   background-color: gray;
+}
+#calendar{
+   width: 700px;
+}
