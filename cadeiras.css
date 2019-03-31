@@ -1,11 +1,11 @@
 #cadeiras {
     float: left;
-    height: 400px;
+    height: 600px;
     display: inline-block;
     width: 150px;
     position: absolute;
     top: 67px;
-    left: 17%;
+    left: 10%;
     border: solid 1px;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.75) 0px -1px 32px -17px;
