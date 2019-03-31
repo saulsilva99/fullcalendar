@@ -23,19 +23,17 @@ $(document).ready(function() {
           end: '2019-03-29T14:00:00',
        }]
   });
-
 });
 
 function evento(name) {
   var eventoo =  handlerEventNames(name);
   $('#calendar').fullCalendar('renderEvent', eventoo);
-
 }
 function handlerEventNames(name){
   console.log(name);
   if(name == 'ads-T21'){
-    var eventoo = {id:2,title: name,start: '2019-03-26T14:30:00',end: '2019-03-26T15:30:00',
-    };
+    var eventoo = [{id:2,title: name,start: '2019-03-26T14:30:00',end: '2019-03-26T15:30:00'},
+                   {id:2,title: name,start: '2019-03-29T14:30:00',end: '2019-03-29T15:30:00'}];
     return eventoo;
   }
   else if(name == 'ads-T22'){
