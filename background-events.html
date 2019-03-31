@@ -2,24 +2,15 @@
 <html>
 <head>
 <meta charset='utf-8' />
-<link href='packages/core/main.css' rel='stylesheet' />
-<link href='packages/daygrid/main.css' rel='stylesheet' />
-<link href='packages/timegrid/main.css' rel='stylesheet' />
-<link href='packages/list/main.css' rel='stylesheet' />
+<link href="packages\core\main.min.js" rel="stylesheet">
+<link href='fullcalendar.print.css' rel='stylesheet' media='print' />
 <link href='fullcalendar.min.css' rel='stylesheet' />
-<link href='fullcalendar.print.css' rel='stylesheet' />
 <link href='cadeiras.css' rel='stylesheet' />
 
-<script src='packages/core/main.js'></script>
-<script src='packages/interaction/main.js'></script>
-<script src='packages/daygrid/main.js'></script>
-<script src='packages/timegrid/main.js'></script>
-<script src='packages/list/main.js'></script>
-
-
-<script src='jquery-3.3.1.min.js'></script>
-<script src='moment.min.js'></script>
-<script type="text/javascript" src='fullcalendar.min.js'></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.12.0/moment.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.6.1/fullcalendar.min.js"></script>
 <script src='cadeiras_scripts.js'></script>
 
 <style>
@@ -43,8 +34,18 @@
   <div id='calendar'></div>
   <div id="cadeiras">
      <form >
-     <input type="checkbox" name="ptr" value="horario" onchange="evento(this.name)"> opcao 1<br>
-     <input type="checkbox" name="pgp" value="horar2io" > opcao 2<br>
+      <div class="cadeira">
+        <span> Análise de Desenho de software</span>
+        <input type="checkbox" name="ads-T21" value="horario" onchange="evento(this.name)">T21<br>
+        <input type="checkbox" name="ads-T22" value="horario" onchange="evento(this.name)">T22<br>
+        <input type="checkbox" name="ads-TP21" value="horario" onchange="evento(this.name)">TP21<br>
+        <input type="checkbox" name="ads-TP22" value="horario" onchange="evento(this.name)">TP22<br>
+
+      </div>
+      <div class="cadeira" >
+        <span>Programação 2</span>
+        <input type="checkbox" name="pti" value="horario2" onchange="evento(this.name)">pti
+      </div>
 </form>
 
  </div>
